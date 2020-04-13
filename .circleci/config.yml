@@ -1,0 +1,9 @@
+version: 2
+jobs:
+  build:
+    docker:
+      - image: z4nyx/docker:latest
+    steps:
+      - run: git clone https://github.com/z4nyx/android_kernel_xiaomi_sdm660 -b staging .
+      - run: wget https://github.com/z4nyx/scripts/raw/master/lavender/newcam
+      - run: bash newcam
