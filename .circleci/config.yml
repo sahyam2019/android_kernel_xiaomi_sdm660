@@ -4,6 +4,6 @@ jobs:
     docker:
       - image: z4nyx/docker:latest
     steps:
-      - run: git clone --depth=1 https://github.com/z4nyx/android_kernel_xiaomi_sdm660 -b newcam .
-      - run: wget https://github.com/z4nyx/scripts/raw/master/lavender/newcam
-      - run: bash newcam
+      - run: git clone --depth=1 https://github.com/z4nyx/android_kernel_xiaomi_sdm660 -b oldcam .
+      - run: wget https://github.com/z4nyx/scripts/raw/master/lavender/oldcam
+      - run: bash oldcam
